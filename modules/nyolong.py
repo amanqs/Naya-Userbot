@@ -66,7 +66,7 @@ async def copay(event):
 @ayra_cmd(pattern="curi(?: |$)(.*)")
 async def pencuri(event):
     dia = await event.get_reply_message()
-    botlog = 'YOUR_BOTLOG_CHAT_ID'  # Ganti dengan ID obrolan log Anda
+    botlog = 'me'
 
     if not dia:
         await event.respond('<b>Media tidak didukung</b>')
