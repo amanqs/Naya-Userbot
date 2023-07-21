@@ -63,7 +63,7 @@ async def copay(event):
             await xx.delete()
 
 
-@ayra_cmd(pattern="curi(?: |$)(.*)")
+@client.on(events.NewMessage(pattern=r'curi(?: |$)(.*)'))
 async def pencuri(event):
     dia = await event.get_reply_message()
     botlog = 'me'
